@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+ 
+#contact{
+    transition: all .40s ease;
+    font-size: xx-large;
+    text-decoration: none;
+    
+}
+header {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to top, rgba(0, 0, 255, 0.8), rgba(0, 255, 255, 0.8));
+    background-image: url("https://www.bankmycell.com/blog/wp-content/uploads/2023/03/post-how-many-iphones-have-been-sold.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #header_sec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: #fff;
+    gap: 20px;
+  }
+  #hero>h1 {
+    text-align: center;
+  }
+  #header_sec>div {
+    width: 30%;
+    background-color: skyblue;
+    opacity: 0.4;
+    padding: 10px;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+#hero {
+
+    padding: 10px;
+}
+#gridSection {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    gap: 20px;
+    
+}
+#gridSection>div {
+    background-color: #f3f3f3;
+}
+#gridSection>div>div>img {
+    width: 50%;
+    margin: auto;
+    height: 300px;
+
+}
+#gridSection>div>div {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.title,.description{
+  margin:10px 0;
+}
+
+
+footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+.footer-content {
+    max-width: 1000px;
+    margin: auto;
+    font-size: xx-large;
+    padding: 50px;
+}
+.footer-content p {
+    margin: 5px 0;
+    padding: 20px;
+  
+}
+a{
+    text-decoration: none;
+}
+
+li{
+    padding: 10px;
+}
+
+
+/* Tablets */
+@media (max-width: 1024px) {
+  #gridSection {
+      grid-template-columns: repeat(2, 1fr);
+  }
+  #header_sec {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+    #header_sec > div {
+        width: 100%;
+      }
+  #gridSection {
+      grid-template-columns: 1fr;
+  }
+  footer>ul {
+      flex-direction: column;
+      gap: 10px;
+  }
+}
+
